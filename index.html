@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Undangan Pernikahan - MULAN</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* Animations */
     @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes zoomIn {
-      from {
-        opacity: 0;
-        transform: scale(0.8);
-      }
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
     }
 
+    /* Base Styles */
     body {
       margin: 0;
       padding: 0;
@@ -35,7 +25,6 @@
       background: linear-gradient(135deg, #ffe6ec, #fcefe3);
       color: #4d3f3f;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
@@ -43,12 +32,12 @@
     }
 
     .content {
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 20px;
       padding: 30px;
       max-width: 600px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
       margin: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
       animation: fadeInUp 1s ease forwards;
     }
 
@@ -56,25 +45,24 @@
       font-size: 2.5em;
       color: #d96c83;
       margin-bottom: 10px;
-      opacity: 0;
       animation: fadeInUp 1s ease forwards;
       animation-delay: 0.2s;
+      opacity: 0;
     }
 
     h2 {
       font-size: 1.8em;
       color: #ba5a76;
-      margin-top: 0;
-      opacity: 0;
       animation: fadeInUp 1s ease forwards;
       animation-delay: 0.4s;
+      opacity: 0;
     }
 
     p {
       font-size: 1.1em;
-      opacity: 0;
       animation: fadeInUp 1s ease forwards;
       animation-delay: 0.6s;
+      opacity: 0;
     }
 
     .circle-image {
@@ -99,9 +87,35 @@
       margin-top: 40px;
       font-size: 0.9em;
       color: #8c7e7e;
-      opacity: 0;
       animation: fadeInUp 1s ease forwards;
       animation-delay: 1s;
+      opacity: 0;
+    }
+
+    /* RESPONSIVE FOR MOBILE */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.8em;
+      }
+
+      h2 {
+        font-size: 1.4em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .content {
+        padding: 20px;
+        margin: 10px;
+      }
+
+      .circle-image {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+      }
     }
   </style>
 </head>
@@ -115,11 +129,12 @@
       <img src="./Screenshot 2025-04-12 203728.png" alt="Foto Pernikahan">
     </div>
 
-    <p>Dengan penuh kebahagiaan, saya mengucapkan selamat kembali ke pondok.</p>
+    <p>Dengan penuh kebahagiaan, gua mengucapkan selamat balekk pondok</p>
 
     <p><strong>Tanggal:</strong> Minggu, 13 April 2025<br>
 
-    <p>mampus balik duluan, kasian deh loo.
+    <p>mampus balik dluannn</p>
+
     <div class="footer">
       Hormat kami,<br>Maulana & Muhfida
     </div>
